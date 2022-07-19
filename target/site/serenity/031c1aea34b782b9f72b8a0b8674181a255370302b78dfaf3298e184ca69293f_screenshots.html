@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="1f161fcd8f1477eaa8450f45dcbf4415aa12b4940275ec6f419b17d1b4848fec.html">As Admin I Want To Register A New Patient So That He/She Can Get Treatment</a></span>
+                > <span class="truncate-60"><a
+                    href="031c1aea34b782b9f72b8a0b8674181a255370302b78dfaf3298e184ca69293f.html">As admin I want to register a new patient with valid data </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-07-2022 13:46</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">As Admin I Want To Register A New Patient So That He/She Can Get Treatment </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">As admin I want to register a new patient with valid data
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//strong[normalize-space()='PENDAFTARAN BERHASIL']'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.pendaftaranbarupage.validateSuccess(pendaftaranbarupage.java:51)<br />starter.definitions.pendaftaranbaru.registsukses(pendaftaranbaru.java:55)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource3344387185781019246.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="326760b024a2bafe5199b4136c4d7275acb72afc7df37f280ab5f6ac1dcc7641.png" title=" Given admin on login page" width="1034"/>
+                <img src="326760b024a2bafe5199b4136c4d7275acb72afc7df37f280ab5f6ac1dcc7641.png" title=" Open page" width="1034"/>
+                <img src="326760b024a2bafe5199b4136c4d7275acb72afc7df37f280ab5f6ac1dcc7641.png" title=" Validateon login page" width="1034"/>
+                <img src="326760b024a2bafe5199b4136c4d7275acb72afc7df37f280ab5f6ac1dcc7641.png" title=" Validateon login page (completed)" width="1034"/>
+                <img src="326760b024a2bafe5199b4136c4d7275acb72afc7df37f280ab5f6ac1dcc7641.png" title=" Given admin on login page (completed)" width="1034"/>
+                <img src="ac7634d7ca6454f33acf533e6b1ab917867792654c61cca383f5077c50df77e5.png" title=" When admin input valid id" width="1034"/>
+                <img src="ac7634d7ca6454f33acf533e6b1ab917867792654c61cca383f5077c50df77e5.png" title=" Input ID: admin-1" width="1034"/>
+                <img src="ac7634d7ca6454f33acf533e6b1ab917867792654c61cca383f5077c50df77e5.png" title=" When admin input valid id (completed)" width="1034"/>
+                <img src="d874a8400219331461e8bfe481a6f4cce54b81ddc9b9e796b0e9e20a97e4d143.png" title=" And admin input valid password" width="1034"/>
+                <img src="d874a8400219331461e8bfe481a6f4cce54b81ddc9b9e796b0e9e20a97e4d143.png" title=" Input password: root" width="1034"/>
+                <img src="d874a8400219331461e8bfe481a6f4cce54b81ddc9b9e796b0e9e20a97e4d143.png" title=" And admin input valid password (completed)" width="1034"/>
+                <img src="6e87135eb408c9a25f1da8d72c055635acfae183c04ec5497751c71a818a061b.png" title=" And admin click on masuk button" width="1034"/>
+                <img src="6e87135eb408c9a25f1da8d72c055635acfae183c04ec5497751c71a818a061b.png" title=" Clicklogin button" width="1034"/>
+                <img src="6e87135eb408c9a25f1da8d72c055635acfae183c04ec5497751c71a818a061b.png" title=" And admin click on masuk button (completed)" width="1034"/>
+                <img src="e31c39766773f64a7c324f1823eb6c4429cde5e7d88ed75fb170e7c8150ae6b6.png" title=" Then admin on homepage" width="1034"/>
+                <img src="e31c39766773f64a7c324f1823eb6c4429cde5e7d88ed75fb170e7c8150ae6b6.png" title=" On home page" width="1034"/>
+                <img src="142c3bf9380814f0e69866bb17920dc41b558f96913068802ff9baa665f8a347.png" title=" On home page (completed)" width="1034"/>
+                <img src="142c3bf9380814f0e69866bb17920dc41b558f96913068802ff9baa665f8a347.png" title=" Then admin on homepage (completed)" width="1034"/>
+                <img src="09d8d8b159161352b3460406c05fb92699b1164640152495bc0840bc06ace64d.png" title=" And admin click new patient registration button" width="1034"/>
+                <img src="09d8d8b159161352b3460406c05fb92699b1164640152495bc0840bc06ace64d.png" title=" Click new patien regist" width="1034"/>
+                <img src="09d8d8b159161352b3460406c05fb92699b1164640152495bc0840bc06ace64d.png" title=" And admin click new patient registration button (completed)" width="1034"/>
+                <img src="09d8d8b159161352b3460406c05fb92699b1164640152495bc0840bc06ace64d.png" title=" Given admin on new patient registration page" width="1034"/>
+                <img src="09d8d8b159161352b3460406c05fb92699b1164640152495bc0840bc06ace64d.png" title=" On new patient page" width="1034"/>
+                <img src="09d8d8b159161352b3460406c05fb92699b1164640152495bc0840bc06ace64d.png" title=" Given admin on new patient registration page (completed)" width="1034"/>
+                <img src="25b4ab7d0989746429c566e6da43e19a76fa9f1442591e50ce73ee76e2c35053.png" title=" When admin input valid NIK" width="1034"/>
+                <img src="25b4ab7d0989746429c566e6da43e19a76fa9f1442591e50ce73ee76e2c35053.png" title=" Input valid NIK: 3675890799071000" width="1034"/>
+                <img src="25b4ab7d0989746429c566e6da43e19a76fa9f1442591e50ce73ee76e2c35053.png" title=" When admin input valid NIK (completed)" width="1034"/>
+                <img src="80b9cb7a8fa73049caec2d9e73b40091ef56472d65a4c1e056e7b614bf7ee4af.png" title=" And admin input valid fullname" width="1034"/>
+                <img src="80b9cb7a8fa73049caec2d9e73b40091ef56472d65a4c1e056e7b614bf7ee4af.png" title=" Input valid name: Ayam Hitam" width="1034"/>
+                <img src="80b9cb7a8fa73049caec2d9e73b40091ef56472d65a4c1e056e7b614bf7ee4af.png" title=" And admin input valid fullname (completed)" width="1034"/>
+                <img src="704f1be1e5c42e01ededb8b98ca2f7ce0c1c0976e029c86c0bafced04a2f2873.png" title=" And admin input valid no hp" width="1034"/>
+                <img src="704f1be1e5c42e01ededb8b98ca2f7ce0c1c0976e029c86c0bafced04a2f2873.png" title=" Input valid num HP: 089512176533" width="1034"/>
+                <img src="704f1be1e5c42e01ededb8b98ca2f7ce0c1c0976e029c86c0bafced04a2f2873.png" title=" And admin input valid no hp (completed)" width="1034"/>
+                <img src="a79a4475c741696b26ad767ddf870843775ae8e544e35014b69c7588e5fe9db1.png" title=" And admin choose gender" width="1034"/>
+                <img src="a79a4475c741696b26ad767ddf870843775ae8e544e35014b69c7588e5fe9db1.png" title=" Choose gender: Perempuan" width="1034"/>
+                <img src="a79a4475c741696b26ad767ddf870843775ae8e544e35014b69c7588e5fe9db1.png" title=" And admin choose gender (completed)" width="1034"/>
+                <img src="8b1bfccd066513de1415fedfd94e70f7e2fce00a28e3c28c3f8d984a92926c55.png" title=" And admin choose poli" width="1034"/>
+                <img src="8b1bfccd066513de1415fedfd94e70f7e2fce00a28e3c28c3f8d984a92926c55.png" title=" Choose poli: clinic-3" width="1034"/>
+                <img src="8b1bfccd066513de1415fedfd94e70f7e2fce00a28e3c28c3f8d984a92926c55.png" title=" And admin choose poli (completed)" width="1034"/>
+                <img src="4cf2e15dffdfb3fbbabaf301b3cdaea31db3830747c1f1c0d39dea492d872ba0.png" title=" And admin choose doctor" width="1034"/>
+                <img src="4cf2e15dffdfb3fbbabaf301b3cdaea31db3830747c1f1c0d39dea492d872ba0.png" title=" Choose doctor: doctor-5" width="1034"/>
+                <img src="4cf2e15dffdfb3fbbabaf301b3cdaea31db3830747c1f1c0d39dea492d872ba0.png" title=" And admin choose doctor (completed)" width="1034"/>
+                <img src="47f5fec907abfd962b9db88b5d9bb315c93b27889f4c3551a436b94d2059afa3.png" title=" And admin choose time" width="1034"/>
+                <img src="47f5fec907abfd962b9db88b5d9bb315c93b27889f4c3551a436b94d2059afa3.png" title=" Choose time: schedule-3" width="1034"/>
+                <img src="47f5fec907abfd962b9db88b5d9bb315c93b27889f4c3551a436b94d2059afa3.png" title=" And admin choose time (completed)" width="1034"/>
+                <img src="571dd4f95fca4b5c03b76258f71b0a6693625f2e7325251f5e74e5b845304c38.png" title=" And admin input keluhan" width="1034"/>
+                <img src="571dd4f95fca4b5c03b76258f71b0a6693625f2e7325251f5e74e5b845304c38.png" title=" Input keluhan: Demam sudah 5 bulan, tenggorokan kering, batuk, linu, sesak nafas" width="1034"/>
+                <img src="571dd4f95fca4b5c03b76258f71b0a6693625f2e7325251f5e74e5b845304c38.png" title=" And admin input keluhan (completed)" width="1034"/>
+                <img src="956af5ada584d78fae0403a6c0fec767ef375cdb0fddc67b81bad508333f133b.png" title=" Then Admin click confirmation button" width="1034"/>
+                <img src="956af5ada584d78fae0403a6c0fec767ef375cdb0fddc67b81bad508333f133b.png" title=" Click confirm" width="1034"/>
+                <img src="956af5ada584d78fae0403a6c0fec767ef375cdb0fddc67b81bad508333f133b.png" title=" Then Admin click confirmation button (completed)" width="1034"/>
+                <img src="956af5ada584d78fae0403a6c0fec767ef375cdb0fddc67b81bad508333f133b.png" title=" And new patient registered succesfully" width="1034"/>
+                <img src="ce880503e8aa41675d796cafbf273634ae3993dbee7ab932ff6f482245b1c7f2.png" title=" Validate success: <span class='error-color'>ERROR</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As admin I want to login, so I can register patient","As admin I want to login with valid data","ERROR","2022-07-19T13:44:07.67+07:00[Asia/Bangkok]","0.0","28.41"
+"As admin I want to register a new patient so that he/she can get treatment","As admin I want to register a new patient with valid data","ERROR","2022-07-19T13:46:09.228+07:00[Asia/Bangkok]","0.0","26.68"

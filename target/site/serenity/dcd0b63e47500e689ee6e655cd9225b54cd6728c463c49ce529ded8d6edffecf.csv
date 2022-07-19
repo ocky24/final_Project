@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As admin I want to login, so I can register patient","As admin I want to login with valid data","ERROR","2022-07-19T13:44:07.67+07:00[Asia/Bangkok]","0.0","28.41"
+"As admin I want to login, so I can register patient","As admin I want to login with invalid id","SUCCESS","2022-07-19T13:44:38.859+07:00[Asia/Bangkok]","0.0","15.48"
+"As admin I want to login, so I can register patient","As admin I want to login with invalid password","SUCCESS","2022-07-19T13:44:55.796+07:00[Asia/Bangkok]","0.0","11.04"
+"As admin I want to login, so I can register patient","As admin I want to login with invalid id and invalid password","SUCCESS","2022-07-19T13:45:08.031+07:00[Asia/Bangkok]","0.0","10.75"

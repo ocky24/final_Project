@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As admin I want to login, so I can register patient","As admin I want to login with valid data","ERROR","2022-07-19T13:44:07.67+07:00[Asia/Bangkok]","0.0","28.41"
+"As admin I want to login, so I can register patient","As admin I want to login with invalid id","SUCCESS","2022-07-19T13:44:38.859+07:00[Asia/Bangkok]","0.0","15.48"
+"As admin I want to login, so I can register patient","As admin I want to login with invalid password","SUCCESS","2022-07-19T13:44:55.796+07:00[Asia/Bangkok]","0.0","11.04"
+"As admin I want to login, so I can register patient","As admin I want to login with invalid id and invalid password","SUCCESS","2022-07-19T13:45:08.031+07:00[Asia/Bangkok]","0.0","10.75"
+"As admin I want to register a patient so that she/he can get treatment","As admin I want to register a patient","SUCCESS","2022-07-19T13:45:20.587+07:00[Asia/Bangkok]","0.0","21.45"
+"As admin I want to register a patient so that she/he can get treatment","As admin I want to input invalid id patient","SUCCESS","2022-07-19T13:45:44.351+07:00[Asia/Bangkok]","0.0","23.51"
+"As admin I want to register a new patient so that he/she can get treatment","As admin I want to register a new patient with valid data","ERROR","2022-07-19T13:46:09.228+07:00[Asia/Bangkok]","0.0","26.68"

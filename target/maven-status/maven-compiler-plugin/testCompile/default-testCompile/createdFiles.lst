@@ -1,0 +1,8 @@
+starter\definitions\pendaftaranbaru.class
+starter\definitions\login.class
+starter\pages\loginpages.class
+starter\pages\pasienlamapage.class
+starter\CucumberTestSuite.class
+starter\definitions\pasienlama.class
+starter\pages\homepages.class
+starter\pages\pendaftaranbarupage.class

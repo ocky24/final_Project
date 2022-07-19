@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="As admin I want to register a patient so that she/he can get treatment" skipped="0" tests="2" time="44.95" timestamp="2022-07-19 01:45:20"><testcase name="As admin I want to register a patient"/><testcase name="As admin I want to input invalid id patient"/></testsuite>
